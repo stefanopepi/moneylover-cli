@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+var express = require('express')
+var http = require('http')
+var app = express()
+ 
+http.createServer(app).listen(8080)
 // eslint-disable-next-line no-unused-expressions
 require('yargs')
   .command(require('./commands/login'))
